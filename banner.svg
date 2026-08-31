@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="K.B.M. Arak Ayman Labnan — Software Engineer, Mobile. Flutter and FastAPI. Dhaka, Bangladesh.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d2c4c"/>
+      <stop offset="45%" stop-color="#14213d"/>
+      <stop offset="100%" stop-color="#0d1526"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#fca311" fill-opacity="0.20"/>
+    </pattern>
+    <linearGradient id="fadeR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="dotMask">
+      <rect x="620" y="0" width="380" height="260" fill="url(#fadeR)"/>
+    </mask>
+  </defs>
+
+  <rect width="1000" height="260" fill="url(#bg)"/>
+  <rect x="620" y="0" width="380" height="260" fill="url(#dots)" mask="url(#dotMask)"/>
+
+  <circle cx="905" cy="130" r="118" fill="none" stroke="#fca311" stroke-opacity="0.18" stroke-width="1.5"/>
+  <circle cx="905" cy="130" r="82" fill="none" stroke="#fca311" stroke-opacity="0.12" stroke-width="1.5"/>
+
+  <rect x="0" y="0" width="9" height="260" fill="#fca311"/>
+  <rect x="52" y="52" width="46" height="4" fill="#fca311"/>
+
+  <text x="52" y="112" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="40" letter-spacing="2.5" fill="#ffffff" font-weight="300">K.B.M. ARAK AYMAN <tspan font-weight="700">LABNAN</tspan></text>
+
+  <rect x="52" y="140" width="620" height="1" fill="#ffffff" fill-opacity="0.18"/>
+
+  <text x="52" y="176" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" letter-spacing="4.2" fill="#fca311" font-weight="600">SOFTWARE ENGINEER — MOBILE</text>
+
+  <text x="52" y="208" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14.5" letter-spacing="1.1" fill="#c3cfe0" font-weight="400">Flutter clients and the FastAPI services behind them · Dhaka, Bangladesh</text>
+</svg>
