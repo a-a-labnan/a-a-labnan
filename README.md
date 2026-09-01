@@ -265,8 +265,8 @@ Based in **Dhaka, UTC+6** — which lines up with more of the world than people 
 
 Comfortable async: written standups, decisions recorded in the PR, and enough detail in a handover that nobody has to wait for my morning.
 
-<details>
-<summary><b>Education and training</b></summary>
+<details open>
+<summary>🎓 <b>Education</b></summary>
 <br>
 
 | | Qualification | Institution | Result |
@@ -275,9 +275,7 @@ Comfortable async: written standups, decisions recorded in the PR, and enough de
 | **2014 — 2015** | Higher Secondary School Certificate | Cantonment Public School & College, Saidpur | GPA **5.00 / 5.00** |
 | **2012 — 2013** | Secondary School Certificate | Thakurgaon Govt. Boys' High School | GPA **5.00 / 5.00** |
 
-Placed **4th in C programming** at the DIU Take-off Programming Contest, Summer 2017 — first semester, first contest.
-
-Certificates live in [Credentials you can click](#credentials-you-can-click) above.
+Placed **4th in C programming** at the DIU Take-off Programming Contest, Summer 2017.
 
 </details>
 
