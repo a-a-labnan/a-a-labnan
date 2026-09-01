@@ -1,36 +1,176 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="K.B.M. Arak Ayman Labnan — Software Engineer, Mobile. Flutter and FastAPI. Dhaka, Bangladesh.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-labelledby="bt bd">
+  <title id="bt">K.B.M. Arak Ayman Labnan — Software Engineer, Mobile</title>
+  <desc id="bd">Flutter clients and the FastAPI services behind them. Dhaka, Bangladesh.</desc>
+
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1d2c4c"/>
-      <stop offset="45%" stop-color="#14213d"/>
+      <stop offset="0%" stop-color="#1d2c4c">
+        <animate attributeName="stop-color" values="#1d2c4c;#263a66;#1a2a4d;#1d2c4c" dur="14s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="45%" stop-color="#14213d">
+        <animate attributeName="stop-color" values="#14213d;#17274a;#121d36;#14213d" dur="14s" repeatCount="indefinite"/>
+      </stop>
       <stop offset="100%" stop-color="#0d1526"/>
     </linearGradient>
+
     <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.6" fill="#fca311" fill-opacity="0.20"/>
+      <circle cx="2" cy="2" r="1.6" fill="#fca311" fill-opacity="0.22"/>
     </pattern>
+
     <linearGradient id="fadeR" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#000" stop-opacity="0"/>
       <stop offset="100%" stop-color="#000" stop-opacity="1"/>
     </linearGradient>
     <mask id="dotMask">
-      <rect x="620" y="0" width="380" height="260" fill="url(#fadeR)"/>
+      <rect x="560" y="0" width="440" height="300" fill="url(#fadeR)"/>
     </mask>
+
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="55%" stop-color="#fca311" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="barPulse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="typeClip">
+      <rect x="46" y="72" width="0" height="58">
+        <animate attributeName="width" values="0;0;600;720;720" keyTimes="0;0.08;0.68;0.76;1" dur="4.6s" fill="freeze" calcMode="linear"/>
+      </rect>
+    </clipPath>
   </defs>
 
-  <rect width="1000" height="260" fill="url(#bg)"/>
-  <rect x="620" y="0" width="380" height="260" fill="url(#dots)" mask="url(#dotMask)"/>
+  <!-- ground -->
+  <rect width="1000" height="300" fill="url(#bg)"/>
+  <rect x="560" y="0" width="440" height="300" fill="url(#dots)" mask="url(#dotMask)"/>
 
-  <circle cx="905" cy="130" r="118" fill="none" stroke="#fca311" stroke-opacity="0.18" stroke-width="1.5"/>
-  <circle cx="905" cy="130" r="82" fill="none" stroke="#fca311" stroke-opacity="0.12" stroke-width="1.5"/>
+  <!-- orbit system -->
+  <g transform="translate(858,150)">
+    <circle r="134" fill="none" stroke="#fca311" stroke-opacity="0.14" stroke-width="1.3" stroke-dasharray="3 9">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="96" fill="none" stroke="#fca311" stroke-opacity="0.20" stroke-width="1.4"/>
+    <circle r="60" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1.2" stroke-dasharray="2 7">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="30s" repeatCount="indefinite"/>
+    </circle>
 
-  <rect x="0" y="0" width="9" height="260" fill="#fca311"/>
-  <rect x="52" y="52" width="46" height="4" fill="#fca311"/>
+    <!-- radar sweep -->
+    <circle r="30" fill="none" stroke="#fca311" stroke-width="1.6" opacity="0">
+      <animate attributeName="r" values="30;134" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="30" fill="none" stroke="#fca311" stroke-width="1.6" opacity="0">
+      <animate attributeName="r" values="30;134" dur="4.5s" begin="2.25s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0" dur="4.5s" begin="2.25s" repeatCount="indefinite"/>
+    </circle>
 
-  <text x="52" y="112" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="40" letter-spacing="2.5" fill="#ffffff" font-weight="300">K.B.M. ARAK AYMAN <tspan font-weight="700">LABNAN</tspan></text>
+    <!-- core -->
+    <circle r="9" fill="#fca311" filter="url(#glow)">
+      <animate attributeName="r" values="8;10.5;8" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
 
-  <rect x="52" y="140" width="620" height="1" fill="#ffffff" fill-opacity="0.18"/>
+    <!-- orbiting bodies -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="11s" repeatCount="indefinite"/>
+      <circle cx="96" cy="0" r="5" fill="#ffffff" fill-opacity="0.9"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="140" to="500" dur="18s" repeatCount="indefinite"/>
+      <circle cx="134" cy="0" r="3.6" fill="#fca311"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="290" to="-70" dur="8s" repeatCount="indefinite"/>
+      <circle cx="60" cy="0" r="3" fill="#c3cfe0" fill-opacity="0.85"/>
+    </g>
+  </g>
 
-  <text x="52" y="176" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" letter-spacing="4.2" fill="#fca311" font-weight="600">SOFTWARE ENGINEER — MOBILE</text>
+  <!-- rising particles -->
+  <g fill="#fca311">
+    <circle cx="612" cy="300" r="1.7"><animate attributeName="cy" values="305;-10" dur="9s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.75;0" dur="9s" begin="0s" repeatCount="indefinite"/></circle>
+    <circle cx="668" cy="300" r="1.2"><animate attributeName="cy" values="305;-10" dur="11s" begin="1.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="11s" begin="1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="722" cy="300" r="2.1"><animate attributeName="cy" values="305;-10" dur="13s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.5;0" dur="13s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="781" cy="300" r="1.4"><animate attributeName="cy" values="305;-10" dur="10s" begin="3.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="10s" begin="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="846" cy="300" r="1.1"><animate attributeName="cy" values="305;-10" dur="12s" begin="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.55;0" dur="12s" begin="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="909" cy="300" r="1.9"><animate attributeName="cy" values="305;-10" dur="14s" begin="4.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.45;0" dur="14s" begin="4.5s" repeatCount="indefinite"/></circle>
+    <circle cx="963" cy="300" r="1.3"><animate attributeName="cy" values="305;-10" dur="10.5s" begin="1.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.65;0" dur="10.5s" begin="1.9s" repeatCount="indefinite"/></circle>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="641" cy="300" r="1"><animate attributeName="cy" values="305;-10" dur="15s" begin="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.4;0" dur="15s" begin="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="812" cy="300" r="1.2"><animate attributeName="cy" values="305;-10" dur="12.5s" begin="5.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.35;0" dur="12.5s" begin="5.4s" repeatCount="indefinite"/></circle>
+    <circle cx="936" cy="300" r="0.9"><animate attributeName="cy" values="305;-10" dur="16s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.4;0" dur="16s" begin="0.4s" repeatCount="indefinite"/></circle>
+  </g>
 
-  <text x="52" y="208" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14.5" letter-spacing="1.1" fill="#c3cfe0" font-weight="400">Flutter clients and the FastAPI services behind them · Dhaka, Bangladesh</text>
+  <!-- sweeping shine -->
+  <rect x="-360" y="0" width="360" height="300" fill="url(#shine)">
+    <animateTransform attributeName="transform" type="translate" values="0,0;1400,0" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- left accent bar with travelling pulse -->
+  <rect x="0" y="0" width="9" height="300" fill="#fca311"/>
+  <rect x="0" y="-90" width="9" height="90" fill="url(#barPulse)">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,400" dur="3.4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- tick -->
+  <rect x="52" y="50" width="0" height="4" fill="#fca311">
+    <animate attributeName="width" values="0;52" dur="0.5s" fill="freeze"/>
+  </rect>
+
+  <!-- name, typed -->
+  <g clip-path="url(#typeClip)">
+    <text x="52" y="112" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="36" letter-spacing="2" fill="#ffffff" font-weight="300">K.B.M. ARAK AYMAN <tspan font-weight="700" fill="#ffffff">LABNAN</tspan></text>
+  </g>
+
+  <!-- caret -->
+  <rect x="52" y="80" width="3" height="40" fill="#fca311" filter="url(#glow)">
+    <animate attributeName="x" values="52;52;652;652;652" keyTimes="0;0.08;0.68;0.76;1" dur="4.6s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="0.85s" repeatCount="7"/>
+    <animate attributeName="opacity" values="1;0" begin="6s" dur="0.5s" fill="freeze"/>
+  </rect>
+
+  <!-- rule -->
+  <rect x="52" y="140" width="0" height="1" fill="#ffffff" fill-opacity="0.20">
+    <animate attributeName="width" values="0;700" begin="3.3s" dur="0.9s" fill="freeze"/>
+  </rect>
+  <rect x="52" y="139" width="34" height="3" fill="#fca311" opacity="0">
+    <animate attributeName="opacity" values="0;1" begin="3.5s" dur="0.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;666,0;0,0" begin="4.4s" dur="9s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+  </rect>
+
+  <!-- role -->
+  <text x="52" y="178" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" letter-spacing="14" fill="#fca311" font-weight="600" opacity="0">
+    SOFTWARE ENGINEER — MOBILE
+    <animate attributeName="opacity" values="0;1" begin="3.7s" dur="0.8s" fill="freeze"/>
+    <animate attributeName="letter-spacing" values="14;4.2" begin="3.7s" dur="1.1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
+  </text>
+
+  <!-- tagline -->
+  <text x="52" y="210" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14.5" letter-spacing="1.1" fill="#c3cfe0" font-weight="400" opacity="0">
+    Flutter clients and the FastAPI services behind them · Dhaka, Bangladesh
+    <animate attributeName="opacity" values="0;1" begin="4.3s" dur="0.8s" fill="freeze"/>
+  </text>
+
+  <!-- status pill -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" begin="4.9s" dur="0.7s" fill="freeze"/>
+    <rect x="52" y="234" width="238" height="28" rx="14" fill="#fca311" fill-opacity="0.10" stroke="#fca311" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="72" cy="248" r="4" fill="#3ddc84">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="72" cy="248" r="4" fill="none" stroke="#3ddc84" stroke-width="1.2">
+      <animate attributeName="r" values="4;11" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="88" y="252.5" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" textLength="184" lengthAdjust="spacingAndGlyphs" fill="#e8eef7">OPEN TO REMOTE ROLES</text>
+  </g>
 </svg>
