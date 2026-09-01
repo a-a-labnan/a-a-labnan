@@ -136,61 +136,95 @@ Three years breaking other people's software, then two building my own. The orde
 
 <img src="./divider.svg" width="100%" alt="">
 
-## The toolbox
+## Tech stack
 
-<details>
-<summary><b>Mobile</b> — Flutter, Dart, and whichever state pattern the problem actually needs</summary>
+Everything below is something I've shipped with, not something I've read about. Click a group to fold it away.
+
+<details open>
+<summary>📱 <b>Mobile</b> — Flutter, and whichever state pattern the problem actually needs</summary>
 <br>
 
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![Riverpod](https://img.shields.io/badge/Riverpod-3d5afe?style=for-the-badge)
-![BLoC](https://img.shields.io/badge/BLoC-1a73e8?style=for-the-badge)
-![GetX](https://img.shields.io/badge/GetX-8a2be2?style=for-the-badge)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![Riverpod](https://img.shields.io/badge/Riverpod-3D5AFE?style=flat-square)
+![BLoC](https://img.shields.io/badge/BLoC-1A73E8?style=flat-square)
+![GetX](https://img.shields.io/badge/GetX-8A2BE2?style=flat-square)
+![Provider](https://img.shields.io/badge/Provider-4A90D9?style=flat-square)
+![GoRouter](https://img.shields.io/badge/GoRouter-0553B1?style=flat-square)
+![Dio](https://img.shields.io/badge/Dio-0B6BCB?style=flat-square)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![Material Design](https://img.shields.io/badge/Material_Design-757575?style=flat-square&logo=materialdesign&logoColor=white)
 
-GoRouter for navigation, Dio for transport. Riverpod for new work, and I stay fluent in BLoC, GetX and Provider — inherited codebases don't ask your preference.
+Riverpod for new work; fluent in BLoC, GetX and Provider because inherited codebases don't ask your preference.
 
 </details>
 
-<details>
-<summary><b>Backend</b> — Python, FastAPI, PostgreSQL, containerised</summary>
+<details open>
+<summary>⚡ <b>Backend</b> — Python services I own end to end</summary>
 <br>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
-![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
+![SQLModel](https://img.shields.io/badge/SQLModel-7E56C2?style=flat-square)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white)
+![Alembic](https://img.shields.io/badge/Alembic-6BA81E?style=flat-square)
+![REST / JSON](https://img.shields.io/badge/REST_/_JSON-005571?style=flat-square)
 
-SQLModel over SQLAlchemy, Pydantic for schema validation, Alembic for migrations. Docker Compose so the whole stack comes up with one command.
+SQLModel over raw SQLAlchemy, Pydantic for validation at the edge, Alembic for migrations.
 
 </details>
 
-<details>
-<summary><b>Quality</b> — three years of QA, still shaping how I build</summary>
+<details open>
+<summary>🗄️ <b>Data and infrastructure</b> — one command brings the whole stack up</summary>
 <br>
 
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
-
-Three years as a QA engineer, finishing as senior — test planning across mobile and web release cycles, Selenium regression suites, API validation, defect triage.
-
-It's the most useful thing on this page. I design for the edge case while the feature is still on the whiteboard, not after someone files a ticket. Unit and widget tests go in before the release candidate, not after it. A regression-free release is part of shipping the feature — not a phase that follows it.
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
 </details>
 
-<details>
-<summary><b>AI in the loop</b> — daily pair-programming, reviewed like any other diff</summary>
+<details open>
+<summary>🧪 <b>Quality</b> — three years of QA, still shaping how I build</summary>
 <br>
 
-![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
-![Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white)
-![Cursor](https://img.shields.io/badge/Cursor-000000?style=for-the-badge)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
+![Unit and widget tests](https://img.shields.io/badge/Unit_and_widget_tests-14213D?style=flat-square)
+![Edge-case design](https://img.shields.io/badge/Edge--case_design-14213D?style=flat-square)
 
-Scaffolding, boilerplate, test generation. The discipline matters more than the tooling: every suggestion gets reviewed and covered by tests before it merges. Generated code nobody read is just technical debt that arrived faster.
+I design for the edge case while the feature is still on the whiteboard, not after someone files a ticket. Tests go in before the release candidate. A regression-free release is part of shipping the feature — not a phase that follows it.
+
+</details>
+
+<details open>
+<summary>🤖 <b>AI in the loop</b> — daily pair-programming, reviewed like any other diff</summary>
+<br>
+
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)
+![Cursor](https://img.shields.io/badge/Cursor-000000?style=flat-square)
+![LLM integration](https://img.shields.io/badge/LLM_integration-14213D?style=flat-square)
+![Prompt design](https://img.shields.io/badge/Prompt_design-14213D?style=flat-square)
+
+Every suggestion gets reviewed and covered by tests before it merges. Generated code nobody read is just technical debt that arrived faster.
+
+</details>
+
+<details open>
+<summary>🧭 <b>Principles and what's next</b> — how the code is organised, and where I'm heading</summary>
+<br>
+
+![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-14213D?style=flat-square)
+![SOLID](https://img.shields.io/badge/SOLID-14213D?style=flat-square)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-learning_now-FCA311?style=flat-square&labelColor=14213D)
+
+Clean Architecture and SOLID on both sides of the API. Machine learning is the new one — I've just started, working from the Python I already use daily.
 
 </details>
 
